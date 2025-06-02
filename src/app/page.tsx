@@ -12,11 +12,11 @@ import Title from "@/components/title";
 
 async function getDalyGame() {
   try {
-    const response = await axios.get(
+    const response = await fetch(
       `${process.env.NEXT_API_URL}/next-api/?api=game_day`,
-      { next: { revalidade: 320 } }
+      { next: { revalidate: 320 } }
     );
-    return response.data;
+    return response.json();
   } catch (error) {
     console.error(error);
   }
@@ -24,12 +24,12 @@ async function getDalyGame() {
 
 async function getGamesData() {
   try {
-    const response = await axios.get(
+    const response = await fetch(
       `${process.env.NEXT_API_URL}/next-api/?api=games`,
-      { next: { revalidade: 320 } }
+      { next: { revalidate: 320 } }
     );
 
-    return response.data;
+    return response.json();
   } catch (error) {
     console.error(error);
   }
