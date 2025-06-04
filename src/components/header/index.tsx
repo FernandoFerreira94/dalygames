@@ -5,7 +5,7 @@ import { FaRegUser } from "react-icons/fa";
 import { LiaGamepadSolid } from "react-icons/lia";
 export default function Header() {
   return (
-    <header className="w-full h-28 bg-slate-100">
+    <header className="w-full h-28 bg-slate-100 text-black">
       <nav className="container   mx-auto flex h-full items-center justify-center sm:justify-between">
         <div className="flex items-center h-full  gap-10 px-3">
           <Link href="/">
@@ -18,11 +18,12 @@ export default function Header() {
               priority
             />
           </Link>
-          <Link href="/profile" className="flex gap-2 text-xl items-center">
-            <span> Perfil </span>
-            <FaRegUser size={24} color="black" />
-          </Link>
-          <Link href="/games" className="flex gap-1 text-xl items-center">
+
+          <Link
+            href="/
+          "
+            className="flex gap-1 text-xl items-center"
+          >
             <span> Games </span>
             <MdGames size={24} color="black" />
           </Link>

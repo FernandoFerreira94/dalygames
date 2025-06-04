@@ -1,7 +1,7 @@
 export interface GameProps {
   id: number;
-  categoria: string[];
-  descripton: string;
+  categories: string[];
+  description: string;
   image_url: string;
   release: string;
   title: string;
